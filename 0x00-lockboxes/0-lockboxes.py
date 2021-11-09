@@ -3,16 +3,22 @@
 
 
 def canUnlockAll(boxes):
-    newlist = []
-    k = len(boxes)
-    for i in boxes:
-        if len(i) == 0 and i is not boxes[k-1]:
-            return False
-        for j in i:
-            newlist.append(j)
-    print(newlist)
-    for index, keys in enumerate(boxes):
-        if index in newlist or index < k-1:
-            return True
-        else:
-            return False
+"""
+boxes is a list of lists
+A key with the same number as a box opens that box
+You can assume all keys will be positive integers
+The first box boxes[0] is unlocked
+Return True if all boxes can be opened, else return False
+"""
+    unlocked_Box = [0]
+    pos_keys = boxes[0]
+    for key in pos_keys:
+        if key not in unlocked_Box:
+            try:
+                pos_keys.extend(boxes[key])
+                unlocked_Box.append(key)
+            except:
+                continue
+    if len(unlocked_Box) == len(boxes):
+        return True
+    return False
