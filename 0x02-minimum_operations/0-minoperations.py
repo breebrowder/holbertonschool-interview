@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Task 0: Minimum Operations """
 
+
 def minOperations(n):
     """
     In a text file, there is a single character H. Your text editor can execute
@@ -15,11 +16,15 @@ def minOperations(n):
         return 0
     """
     operations = []
-    i = 1
-    while n != 1:
-        i += 1
-        if n % i == 0:
-            while (n % i == 0 and n != 1):
-                n = n / i
-                operations.append(i)
+    if (isinstance(n, int) is False):
+        return 0
+    if (n < 2):
+        return 0
+    while (n % 2 == 0):
+        operations.append(2)
+        n = n // 2
+    for i in range(3, n + 1, 2):
+        while (n % i == 0):
+            operations.append(i)
+            n = n // i
     return sum(operations)
