@@ -8,6 +8,10 @@
 #define SLIDE_LEFT - 1
 #define SLIDE_RIGHT + 1
 
+/* HELPERS */
+void slide_right(int *line, size_t size);
+void slide_left(int *line, size_t size);
+
 int slide_line(int *line, size_t size, int direction);
 
-#endif /*_SLIDE_LINE_H*/
+#endif /* SLIDE_LINE_H */
