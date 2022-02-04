@@ -21,7 +21,7 @@ int slide_line(int *line, size_t size, int direction)
 	  return (flag);
 	}
 	
-	if (direction != SLIDE_LEFT && direction != SLIDE_RIGHT))
+	if ((direction != SLIDE_LEFT && direction != SLIDE_RIGHT))
 	{
 	  return (flag);
 	}
@@ -38,7 +38,7 @@ int slide_line(int *line, size_t size, int direction)
 	if (direction == SLIDE_RIGHT)
 	{
 		tmp = line[size - 1];
-		for (idx = size - 1; idx > 0; i--)
+		for (idx = size - 1; idx > 0; idx--)
 			line[idx] = line[idx - 1];
 		line[0] = tmp;
 	}
