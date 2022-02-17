@@ -9,5 +9,11 @@
 
 
 void menger(int level);
+void level_1(void);
+void level_2(void);
+void level_3(void);
+void level_4(void);
+void level_5(void);
+void level_6(void);
 
 #endif /* MENGER_H */
