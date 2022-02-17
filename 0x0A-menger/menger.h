@@ -5,6 +5,8 @@
 #include <stdlib.h>
 #include <stddef.h>
 
+#include <math.h> /* just in case, hehe */
+
 
 void menger(int level);
 
