@@ -8,7 +8,7 @@
 
 void menger(int level)
 {
-	int i, j, k;
+	int idx, x, y;
 	int size;
 	int columns;
 	int rows;
@@ -18,18 +18,21 @@ void menger(int level)
 	{
 		for (columns = 0; columns < size; columns++)
 		{
-			k = 35; /* # */
-			i = rows;
-			j = columns;
-			while (i > 0 || j > 0)
+			y = 35; /* ASCII for # */
+			idx = rows;
+			x = columns;
+			while (idx > 0 || x > 0)
 			{
-				if (i % 3 == 1 && j % 3 == 1)
-					k = 32; /* [space] */
-				i /= 3;
-				j /= 3;
+				if (idx % 3 == 1 && x % 3 == 1)
+					y = 32; /* ASCII for space */
+				idx /= 3;
+				x /= 3;
 			}
-			putchar(k);
+			putchar(y);
 		}
 		putchar('\n');
 	}
 }
+
+// Divide AND assignment operator. It divides the left operand with the right operand,
+// and assigns the result to the left operand.
