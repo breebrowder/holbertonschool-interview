@@ -34,5 +34,4 @@ void menger(int level)
 	}
 }
 
-/* Divide AND assignment operator. It divides the left operand with the right operand, */
-/* and assigns the result to the left operand */
+/* Divide AND assignment operator. It divides left and right operand */
