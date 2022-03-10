@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-  Method to calculate how many square units of water
+  Method calculates how many square units of water
   will be retained after it rains
 """
 
