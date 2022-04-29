@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+makeChange
+"""
+
 
 def makeChange(coins, total):
     """ Given a pile of coins of different values, determine the fewest number of coins needed to meet a given amount total """
@@ -9,7 +13,7 @@ def makeChange(coins, total):
     remainder = 0
     num = 0
     idx = 0
-    # Sort highest to lowest
+    # Sort from the highest to the lowest
     sorted = sorted(coins, reverse=True)
     while(remainder < total and idx < len(coins)):
         if (remainder + sorted[idx] <= total):
