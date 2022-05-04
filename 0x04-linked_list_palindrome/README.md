@@ -13,3 +13,23 @@
 * The prototypes of all your functions should be included in your header file called lists.h
 * Don’t forget to push your header file
 * All your header files should be include guarded
+
+
+## Tasks
+
+### 0. Linked list palindrome
+
+<b>Technical interview preparation:</b>
+
+- You are not allowed to google anything
+- Whiteboard first
+
+
+Write a function in C that checks if a singly linked list is a palindrome.
+
+- Prototype: <b>int is_palindrome(listint_t **head);</b>
+- Return: 0 if it is not a palindrome, 1 if it is a palindrome
+- An empty list is considered a palindrome
+
+
+#### Main file is located in the directory for reference.

@@ -13,3 +13,21 @@
 * The prototypes of all your functions should be included in your header file called sandpiles.h
 * Don’t forget to push your header file
 * All your header files should be include guarded
+
+
+
+## Tasks
+
+### 0. Sandpiles sum
+
+Write a function that computes the sum of two sandpiles
+
+- Prototype: <b>void sandpiles_sum(int grid1[3][3], int grid2[3][3]);</b>
+- You can assume that both <b>grid1</b> and <b>grid2</b> are individually stable
+- A sandpile is considered stable when none of its cells contains more than 3 grains
+- When your function is done, <b>grid1</b> must be stable
+- <b>grid1</b> must be printed before each toppling round, only if it is unstable (See example)
+- You’re not allowed to allocate memory dynamically
+
+
+#### Main file is located in the directory for reference.

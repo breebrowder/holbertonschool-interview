@@ -12,3 +12,32 @@
 * The prototypes of all your functions should be included in your header file called menger.h
 * Don’t forget to push your header file
 * All your header files should be include guarded
+
+
+## Tasks
+
+### 0. 2D Menger Sponge
+
+Write a function that draws a 2D Menger Sponge
+
+- Prototype: <b>void menger(int level);</b>
+- Where <b>level</b> is the level of the Menger Sponge to draw
+- If <b>level</b> is lower than <b>0</b>, your function must do nothing
+- You’re allowed to use the <b>math</b> library. Your program will be compiled using the <b>ld</b> flag <b>-lm</b>
+
+Format:
+
+- First, read [Menger sponge](https://en.wikipedia.org/wiki/Menger_sponge)
+- Here, we will only draw a 2D version of the Menger sponge, but the principle is the same
+- A level <b>N</b> sponge is a 3x3 square of level <b>N-1</b> sponges, except for the center one, which is left empty
+- A level 0 sponge is represented by the <b>#</b> character
+
+Examples:
+- A level 0 sponge is a simple 1x1 square
+- A level 1 sponge is a 3x3 square of level 0 sponges, except for the center one, which is left empty
+- A level 2 sponge is a 3x3 square of level 1 sponges, except for the center one, which is left empty
+- …
+- TIP: The size of a level <b>N</b> Menger sponge is calculated as follows: <b>3^N</b>
+
+
+#### Main file is located in the directory for reference.

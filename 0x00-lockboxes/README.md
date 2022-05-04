@@ -10,3 +10,23 @@
 * Your code should be documented
 * Your code should use the PEP 8 style (version 1.7.x)
 * All your files must be executable
+
+
+## Tasks
+
+### 0. Lockboxes
+
+You have <b>n</b> number of locked boxes in front of you. Each box is numbered sequentially from <b>0</b> to <b>n - 1</b> and each box may contain keys to the other boxes.
+
+Write a method that determines if all the boxes can be opened.
+
+- Prototype: <b>def canUnlockAll(boxes)</b>
+- <b>boxes</b> is a list of lists
+- A key with the same number as a box opens that box
+- You can assume all keys will be positive integers
+- There can be keys that do not have boxes
+- The first box <b>boxes[0]</b> is unlocked
+- Return <b>True</b> if all boxes can be opened, else return <b>False</b>
+
+
+#### Main file is located in the directory for reference.

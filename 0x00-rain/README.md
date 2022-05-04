@@ -9,3 +9,19 @@
 * You are not allowed to import any module
 * All modules and functions must be documented
 * All your files must be executable
+
+
+## Tasks
+
+### 0. Rain
+
+Given a list of non-negative integers representing the heights of walls with unit width 1, as if viewing the cross-section of a relief map, calculate how many square units of water will be retained after it rains.
+
+- Prototype: <b>def rain(walls)</b>
+- <b>walls</b> is a list of non-negative integers.
+- Return: Integer indicating total amount of rainwater retained.
+- Assume that the ends of the list (before index 0 and after index walls[-1]) are <b>not</b> walls, meaning they will not retain water.
+- If the list is empty return <b>0</b>.
+
+
+#### Main file is located in the directory for reference.

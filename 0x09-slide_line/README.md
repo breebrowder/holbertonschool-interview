@@ -13,3 +13,26 @@
 * The prototypes of all your functions should be included in your header file called slide_line.h
 * Don’t forget to push your header file
 * All your header files should be include guarded
+
+
+
+## Tasks
+
+### 0. Slide line
+
+The goal of this task is to reproduce the [2048](https://play2048.co/) game(NSFW !!) mechanics on a single horizontal line.
+
+Given an array of integers, we want to be able to slide & merge it to the left or to the right. Identical numbers, if they are contiguous or separated by zeros, should be merged (See example)
+
+- Write a function that slides and merges an array of integers
+- Prototype: <b>int slide_line(int *line, size_t size, int direction);</b>
+- Where <b>line</b> points to an array of integers containing size elements, that must be slided & merged to the direction represented by <b>direction</b>. <b>direction</b> can be either:
+  1. <b>SLIDE_LEFT</b>
+  2. <b>SLIDE_RIGHT</b>
+  3. If it is something else, the function must fail
+  4. Both macros <b>SLIDE_LEFT</b> and <b>SLIDE_RIGHT</b> must be defined in <b>slide_line.h</b>
+- Your function must return 1 upon success, or 0 upon failure
+- You are <b>not allowed</b> to allocate memory dynamically (malloc, calloc, …)
+
+
+#### Main file is located in the directory for reference.

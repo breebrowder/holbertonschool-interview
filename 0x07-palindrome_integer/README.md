@@ -13,3 +13,18 @@
 * The prototypes of all your functions should be included in your header file called palindrome.h
 * Don’t forget to push your header file
 * All your header files should be include guarded
+
+
+## Tasks
+
+### 0. Palindrome unsigned integer
+
+Write a function that checks whether or not a given unsigned integer is a palindrome.
+
+Prototype: <b>int is_palindrome(unsigned long n);</b>
+Where <b>n</b> is the number to be checked
+Your function must return 1 if <b>n</b> is a palindrome, and 0 otherwise
+You are not allowed to allocate memory dynamically (malloc, calloc, …)
+
+
+#### Main file is located in the directory for reference.

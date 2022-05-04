@@ -10,6 +10,8 @@
 6. [Palindrome integer](https://intranet.hbtn.io/projects/1699)
 7. [2048 (single line)](https://intranet.hbtn.io/projects/1701)
 8. [Menger sponge](https://intranet.hbtn.io/projects/1702)
+9. [Making Change](https://intranet.hbtn.io/projects/1739)
+10. [Rotate 2D Matrix](https://intranet.hbtn.io/projects/1731)
 
 
 ## About the Developer  💬
