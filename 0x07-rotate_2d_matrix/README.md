@@ -19,9 +19,9 @@
 
 Given an <b>n</b> x <b>n</b> 2D matrix, rotate it 90 degrees clockwise.
 
-Prototype: <b>def rotate_2d_matrix(matrix):</b>
-Do not return anything. The matrix must be edited in-place.
-You can assume the matrix will have 2 dimensions and will not be empty.
+- Prototype: <b>def rotate_2d_matrix(matrix):</b>
+- Do not return anything. The matrix must be edited in-place.
+- You can assume the matrix will have 2 dimensions and will not be empty.
 
 
 #### Main file is located in the directory for reference.
