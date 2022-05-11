@@ -5,7 +5,7 @@ Task 0. Island Perimeter
 
 
 def island_perimeter(grid):
-    """ Create a function that returns the perimeter of the island described in grid """
+    """ Function that returns the perimeter of the island described in grid """
     per = 0
     for i, x in enumerate(grid):
         for y, z in enumerate(x):
