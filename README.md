@@ -13,6 +13,7 @@
 9. [Making Change](https://intranet.hbtn.io/projects/1739)
 10. [Rotate 2D Matrix](https://intranet.hbtn.io/projects/1731)
 11. [Island Perimeter](https://intranet.hbtn.io/projects/1745)
+12. [Prime Game](https://intranet.hbtn.io/projects/1752)
 
 
 ## About the Developer  💬
