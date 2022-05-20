@@ -8,16 +8,16 @@ def isWinner(x, n):
     Player_1 = 0
     Player_2 = 0
 
-  # conditional: cannot be smaller than 1 or larger than 1000
+    # conditional: cannot be smaller than 1 or larger than 1000
     if x <= 0 or x > 1000:
         return None
 
     for idx in range(x):
-            P = isPrime(n[idx])
-            if len(P) % 2 != 0:
-                    Player_1 += 1
-            else:
-                Player_2 += 1
+        P = isPrime(n[idx])
+        if len(P) % 2 != 0:
+            Player_1 += 1
+        else:
+            Player_2 += 1
 
     if Player_1 > Player_2:
         return "Maria"
@@ -33,14 +33,14 @@ def isPrime(y):
     P = []
     tmp = [True] * (y + 1)
     for idx in range(2, y + 1):
-                if tmp[idx]:
-                        P.append(idx)
-                        for k in range(idx * idx, y + 1, idx):
-                                tmp[k] = False
+        if tmp[idx]:
+            P.append(idx)
+            for k in range(idx * idx, y + 1, idx):
+                tmp[k] = False
     return P
 
-        # Maria always goes first and both play optimally.
-        # There are a total of only 168 prime numbers between 1 to 1000.
-        # Ben has the most wins.
-        # nums is an array of consecutive integers; n.
-        # x is equal to the amount of rounds of the game.
+    # Maria always goes first and both play optimally.
+    # There are a total of only 168 prime numbers between 1 to 1000.
+    # Ben has the most wins.
+    # nums is an array of consecutive integers; n.
+    # x is equal to the amount of rounds of the game.
