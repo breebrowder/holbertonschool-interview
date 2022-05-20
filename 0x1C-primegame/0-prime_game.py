@@ -9,7 +9,10 @@ def isWinner(x, n):
     Player_2 = 0
 
     # conditional: cannot be smaller than 1 or larger than 1000
-    if x <= 0 or x > 1000:
+    # if x <= 0 or x > 1000:
+    # return None
+
+    if x is None or n is None or x == 0 or n == 0:
         return None
 
     for idx in range(x):
